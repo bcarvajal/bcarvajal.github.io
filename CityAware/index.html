@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>CityAware</title>
+	<meta name="description" content="CityAware">
+	<meta name="author" content="Bastian Axl">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<!-- The quick brown fox jumps over the lazy dog -->
+	<div class="container" style="display:none;">
+		<div class="row">
+			<div id="_proyect_node" class="col-xs-10 col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-5">
+				<!-- Card -->
+				<div class="card h-100 -shadow-sm_proyect_textcolor"_proyect_backgroundcolor>
+					<!-- Card-Title -->
+					<div class="card-block mt-2">
+						<h5 class="card-title text-center">_proyect_title</h5>
+					</div>
+					<!-- Card-Image -->
+					<img class="card-img-top rounded-0 mb-1" src="assets/_proyect_image.jpg" alt="Card image cap">
+					<!-- Card-Description -->
+					<div class="card-block m-3 flex-grow-1">
+						<h6 class="card-text text-justify">_proyect_description</h6>
+					</div>
+					<!-- Card-Progress -->
+					<div class="card-block mt-1 ml-2 mr-2 mb-3">
+						<div class="small mb-1">Progreso</div>
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped_proyect_barcolor" role="progressbar" style="width: _proyect_progress%;" aria-valuenow="_proyect_progress" aria-valuemin="0" aria-valuemax="100">_proyect_progress%</div>
+						</div>
+					</div>
+					<!-- Card-Stats -->
+					<div class="card-block ml-1 mr-1 mb-1">
+
+						<div class="row text-center small">
+							<div class="col">Colaboradores</div>
+							<div class="col">Estado</div>
+						</div>
+
+						<div class="row text-center small">
+							<div class="col"><i class="fas fa-users"></i> _proyect_collaborators</div>
+							<div class="col"><i class="far fa-clock"></i> _proyect_status</div>
+						</div>
+
+					</div>
+					<!-- Card-Actions -->
+					<div class="card-block text-right m-2">
+						<div class="row text-center">
+							<div class="col-6"><a href="#" class="btn btn-block btn-dark">Colaborar</a></div>
+							<div class="col-6"><a href="#" class="btn btn-block btn-dark">Exportar</a></div>
+						</div>
+					</div>
+				</div>
+				<!-- EndCard -->
+			</div>
+		</div>
+	</div>
+	<!-- navbar -->
+	<nav class="navbar navbar-dark bg-dark mb-5">
+		<!-- Navbar content -->
+		<a class="navbar-brand" href="#">
+			<div style="display:inline-block;">
+				<i class="fas fa-building"></i>
+				<div style="vertical-align: top; display:inline-block; margin-left:-16px; margin-top:-10px; font-size:12px;">📡</div>
+			</div>CityAware
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+	</nav>
+	<div class="text-center m-5">
+
+		<!-- Cards -->
+		<div class="row" id="cards-container">
+
+			<div class="col">
+				<h1>Cargando...</h1>
+			</div>
+
+		</div>
+
+	</div>
+	<!-- /container -->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/all.js"></script>
+</body>
+
+</html>
