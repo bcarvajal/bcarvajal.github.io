@@ -70,7 +70,7 @@ window.onload = function() {
         },
 
         {
-            name: "Man, SHHHHH!🤫 in Learning",
+            name: "Man, SHHHH! in Learning",
             image: "example2.jpg",
             status: "Aprobado",
             progress: rand(0, 100),
