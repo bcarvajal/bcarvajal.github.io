@@ -17,46 +17,37 @@ function getRandomcolor() {
     return colores.splice(rand(0, colores.length - 1), 1);
 }
 
-var nodeCount = 1;
+function getProgressBarColor(x){
+
+	return "bg-" + ["danger", "info", "success", "primary", "primary"][ parseInt( (x+1)/25 ) ];
+}
+
+var nodeCount = 0;
 var nodeTemplate = "";
 
 function getCard(proyect) {
 
 	var node = nodeTemplate;
 
-	var barcolor = "";
-	var backgroundcolor = ' style="background-color:' + getRandomcolor() + ';"';
-
-    if (proyect.progress < 26 ) {
-
-		barcolor = " bg-danger";
-    }
-    else if (proyect.progress < 51 ) {
-
-		barcolor = " bg-info";
-    }
-	else if (proyect.progress < 76 ) {
-
-		barcolor = " bg-success";
-	}
-
-	node = node.replace("_proyect_node", "card-" + nodeCount++);
-	node = node.replace("_proyect_title", proyect.name);
-	node = node.replace("_proyect_description", proyect.description);
-	node = node.replace("_proyect_image.jpg", proyect.image);
-	node = node.replace("_proyect_status", proyect.status);
-	node = node.replace(/_proyect_progress/g, proyect.progress); // more than 1 ocurrences
-	node = node.replace("_proyect_barcolor", barcolor);
-	node = node.replace("_proyect_textcolor", " text-white");
-	node = node.replace("_proyect_backgroundcolor", backgroundcolor);
-	node = node.replace("_proyect_collaborators", proyect.collaborators);
+	node = node.replace("proyect-index", nodeCount);
+	node = node.replace("proyect-id", "card-" + (nodeCount++));
+	node = node.replace("proyect-title", proyect.name);
+	node = node.replace("proyect-description", proyect.description);
+	node = node.replace("proyect-default-image.jpg", proyect.image);
+	node = node.replace("proyect-image-description", proyect.description);
+	node = node.replace("proyect-status", proyect.status);
+	node = node.replace(/proyect-progress/g, proyect.progress); // more than 1 ocurrences
+	node = node.replace("proyect-progress-color", getProgressBarColor);
+	node = node.replace("proyect-extra-classes", "text-white");
+	node = node.replace("proyect-extra-styles", "background-color: " + getRandomcolor() + ";");
+	node = node.replace("proyect-collaborators", proyect.collaborators);
 
 	return $(node);
 }
 
 window.onload = function() {
 
-    nodeTemplate = $("#_proyect_node").prop("outerHTML");
+    nodeTemplate = $("#proyect-id").prop("outerHTML");
 
     var proyects = [
 

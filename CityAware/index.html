@@ -37,24 +37,24 @@
 	<!-- The quick brown fox jumps over the lazy dog -->
 	<div class="container" style="display:none;">
 		<div class="row">
-			<div id="_proyect_node" class="col-xs-10 col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-5">
+			<div id="proyect-id" class="col-xs-10 col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-5">
 				<!-- Card -->
-				<div class="card h-100 -shadow-sm_proyect_textcolor"_proyect_backgroundcolor>
+				<div class="card h-100 -shadow-sm proyect-extra-classes" style="proyect-extra-styles">
 					<!-- Card-Title -->
 					<div class="card-block mt-2">
-						<h5 class="card-title text-center">_proyect_title</h5>
+						<h5 class="card-title text-center">proyect-title</h5>
 					</div>
 					<!-- Card-Image -->
-					<img class="card-img-top rounded-0 mb-1" src="assets/_proyect_image.jpg" alt="Card image cap">
+					<img class="card-img-top rounded-0 mb-1" src="assets/proyect-default-image.jpg" alt="proyect-image-description">
 					<!-- Card-Description -->
 					<div class="card-block m-3 flex-grow-1">
-						<h6 class="card-text text-justify">_proyect_description</h6>
+						<h6 class="card-text text-justify">proyect-description</h6>
 					</div>
 					<!-- Card-Progress -->
 					<div class="card-block mt-1 ml-2 mr-2 mb-3">
 						<div class="small mb-1">Progreso</div>
 						<div class="progress">
-							<div class="progress-bar progress-bar-striped_proyect_barcolor" role="progressbar" style="width: _proyect_progress%;" aria-valuenow="_proyect_progress" aria-valuemin="0" aria-valuemax="100">_proyect_progress%</div>
+							<div class="progress-bar progress-bar-striped proyect-progress-color" role="progressbar" style="width:proyect-progress%;" aria-valuenow="proyect-progress" aria-valuemin="0" aria-valuemax="100">proyect-progress%</div>
 						</div>
 					</div>
 					<!-- Card-Stats -->
@@ -66,17 +66,17 @@
 						</div>
 
 						<div class="row text-center small">
-							<div class="col"><i class="fas fa-users"></i> _proyect_collaborators</div>
-							<div class="col"><i class="far fa-clock"></i> _proyect_status</div>
+							<div class="col"><i class="fas fa-users"></i> proyect-collaborators</div>
+							<div class="col"><i class="far fa-clock"></i> proyect-status</div>
 						</div>
 
 					</div>
 					<!-- Card-Actions -->
 					<div class="card-block text-right m-2">
 						<div class="row text-center">
-							<div class="col-5"><a href="#" class="btn btn-block btn-dark"><div class="small">Colaborar</div></a></div>
+							<div class="col-5"><a href="#" onclick="addData(proyect-index)" class="btn btn-block btn-dark"><div class="small">Colaborar</div></a></div>
 							<div class="col-2"></div>
-							<div class="col-5"><a href="#" class="btn btn-block btn-dark"><div class="small">Descargar</div></a></div>
+							<div class="col-5"><a href="#" onclick="getData(proyect-index)" class="btn btn-block btn-dark"><div class="small">Descargar</div></a></div>
 						</div>
 					</div>
 				</div>
