@@ -31,12 +31,20 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
 
 if (params.lat) {
 
-	document.getElementById('lat') = params.lat;
+	document.getElementById('lat').innerHTML = params.lat;
+}
+else {
+
+	document.getElementById('lat').innerHTML = 'NOPE1';
 }
 
 if (params.lon) {
 
-	document.getElementById('lon') = params.lon;
+	document.getElementById('lon').innerHTML = params.lon;
+}
+else {
+
+	document.getElementById('lon').innerHTML = 'NOPE2';
 }
 
 </script>
