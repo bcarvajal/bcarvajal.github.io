@@ -1,0 +1,84 @@
+<html>
+<head>
+
+<style>
+
+body {
+
+	text-align: center;
+}
+
+p {
+
+	text-align: left;
+}
+
+
+img {
+
+	width: 80%;
+	height: auto;
+}
+
+</style>
+
+</head>
+<body>
+
+<div id="content" style="display:none;">
+
+<h3>Resultado</h3>
+
+<p>
+
+<b>Mosquito detectado: <span id="detected">IDK</span></b>
+<br />
+<b>Score: <span id="score">XX</span></b>
+
+</p>
+
+<p id="feedback-1"></p>
+
+<img id="imagen" />
+
+<p id="feedback-2"></p>
+
+</div>
+<div id="loading">
+<h1>Cargando...</h1>
+</div>
+
+<script>
+
+const params = new Proxy(new URLSearchParams(window.location.search), {
+  get: (searchParams, prop) => searchParams.get(prop),
+});
+
+//9728e09f-15ce-46dd-bdeb-74a2b82fe984
+
+const reporte_id = params.reporte;
+
+window.onload = function () {
+
+  const url = "https://mosquitoapp.ddns.net/maomao/ia/" + reporte_id;
+
+	fetch(url).then(res => res.json()).then(data => {
+	
+		document.getElementById("detected").innerHTML = data.detected ? 'SI' : 'NO';
+		document.getElementById("score").innerHTML = data.score.toFixed(2);
+		
+		document.getElementById("feedback-1").innerHTML = data.feedback;
+		document.getElementById("feedback-2").innerHTML = data.feedback;
+		
+		document.getElementById("imagen").src = "https://mosquitoapp.ddns.net/maomao/picture/" + reporte_id;
+		
+		document.getElementById("loading").style.display = 'none';
+		document.getElementById("content").style.display = '';
+	});
+};
+
+</script>
+
+
+</body>
+</html>
