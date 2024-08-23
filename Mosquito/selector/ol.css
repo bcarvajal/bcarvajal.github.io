@@ -348,3 +348,9 @@
 .ol-overviewmap .ol-overviewmap-box:hover {
   cursor: move;
 }
+
+
+button {
+	
+	font-size: 48px !important;
+}
