@@ -6,7 +6,7 @@
 body {
 
 	text-align: center;
-	font-size: 36px;
+	font-size: 48px;
 }
 
 p {
@@ -41,11 +41,11 @@ img {
 
 </p>
 
-<p id="feedback-1"></p>
+<p id="feedback"></p>
 
 <img id="imagen" />
 
-<p id="feedback-2"></p>
+<p id="footer"></p>
 
 </div>
 <div id="loading">
@@ -71,8 +71,8 @@ window.onload = function () {
 		document.getElementById("detected").innerHTML = data.detected ? 'SI' : 'NO';
 		document.getElementById("score").innerHTML = data.score.toFixed(2);
 		
-		document.getElementById("feedback-1").innerHTML = data.feedback;
-		document.getElementById("feedback-2").innerHTML = data.feedback;
+		document.getElementById("feedback").innerHTML = data.feedback;
+		document.getElementById("footer").innerHTML = data.footer;
 		
 		document.getElementById("imagen").src = "https://mosquitoapp.ddns.net/maomao/picture/" + reporte_id;
 		
