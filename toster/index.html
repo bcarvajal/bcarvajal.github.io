@@ -4,14 +4,31 @@
 
 button {
 
-	margin-bottom: 10px;
+	padding: 6px;
+	font-size: 32px;
+	height: 80px;
 }
 
 </style>
 </head>
 <body>
-<div id="container"></div>
+
+<div id="container">
+	<button id="copycat" onclick="copySong()">[10087][ED][Eir Aoi][MEMORIA].mp3</button>
+</div>
+
 <script>
+
+function copySong() {
+
+	navigator.clipboard.writeText(encodeURI(songs[index]));
+	
+	index++;
+	
+	document.getElementById('copycat').innerHTML = songs[index].replace('http://192.168.0.83/bodoque/', '');
+}
+
+var index = 0;
 var songs = [
   "http://192.168.0.83/bodoque/[10087][ED][Eir Aoi][MEMORIA].mp3",
   "http://192.168.0.83/bodoque/[10087][OP][LiSA][oath sign].mp3",
@@ -232,26 +249,6 @@ var songs = [
   "http://192.168.0.83/bodoque/[OST] Devil Trigger.mp3",
   "http://192.168.0.83/bodoque/[OST] Gokuraku Jodo.mp3"
 ];
-
-let container = document.getElementById('container');
-let songNode;
-let linkNode;
-
-for (let i=0; i<songs.length; i++) {
-
-	linkNode = document.createElement('button');
-	linkNode.innerHTML = songs[i];
-	linkNode.onclick = function () {
-
-		navigator.clipboard.writeText(encodeURI(songs[i]));
-		this.style.display = 'none';
-	};
-
-	songNode = document.createElement('div');
-	songNode.appendChild(linkNode);
-
-	container.appendChild(songNode);
-}
 
 </script>
 </body>
