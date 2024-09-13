@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+	const params = new Proxy(new URLSearchParams(window.location.search), {
+	  get: (searchParams, prop) => searchParams.get(prop),
+	});
+
+      // Load the Visualization API and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      function drawChart() {
+
+		const tipo_mosquito = document.getElementById('tipo').selectedIndex;
+		const start_date = document.getElementById('start_date').value;
+		const limit_date = document.getElementById('limit_date').value;
+
+		const selectedColor = [
+			[255, 87, 34],
+			[95, 17, 108],
+			[0, 150, 136]
+		];
+
+		const url = "https://mosquitoapp.ddns.net/maomao/records/" + params.comuna + "/" + tipo_mosquito + "/" + start_date + "/" + limit_date;
+	  
+		fetch(url).then(x => x.json()).then (res => {
+
+			// Create the data table.
+			var data = new google.visualization.DataTable();
+			
+			data.addColumn('string', 'Fecha');
+			data.addColumn('number', 'Reportes');
+
+			data.addRows(res.resultado);
+
+			// Set chart options
+			var options = {
+				'title':'Reportes por día para ' + 110722,
+				'width':1240,
+				'height':600,
+				'colors': ['rgb(' + selectedColor[tipo_mosquito].join(',') + ')']
+		   };
+
+			// Instantiate and draw our chart, passing in some options.
+			var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+			chart.draw(data, options);
+		});
+      }
+	  
+	  function filter_by_date() {
+
+		// Set a callback to run when the Google Visualization API is loaded.
+		google.charts.setOnLoadCallback(drawChart);
+	  }
+	  
+	  window.onload = function () {
+	  
+		filter_by_date();
+	  };
+
+    </script>
+  </head>
+
+  <body>
+	<div style="text-align:center;">
+		Desde: <input type="date" value="2024-01-01" id="start_date" />
+		Hasta: <input type="date" value="2024-12-31" id="limit_date" />
+		<br>
+		<select id="tipo">
+			<option value="0">Aedes</option>
+			<option value="1">Culex</option>
+			<option value="2">Otros</option>
+		</select>
+		<br>
+		<button onclick="filter_by_date()">Filtrar</button>
+	</div>
+    <!--Div that will hold the pie chart-->
+    <div id="chart_div"></div>
+  </body>
+</html>
