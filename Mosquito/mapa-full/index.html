@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Using OpenLayers with Webpack</title>
+    <style>
+      @import "node_modules/ol/ol.css";
+    </style>
+    <style>
+      html, body {
+        margin: 0;
+        height: 100%;
+      }
+	  div {
+		text-align: center;
+	  }
+	  select {
+		font-size: 22px;
+	  }
+      #map {
+        position: absolute;
+        top: 30px;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+	<script>
+
+		window.onload = function () {
+		
+			let params = new Proxy(new URLSearchParams(window.location.search), {
+			  get: (searchParams, prop) => searchParams.get(prop),
+			});
+		
+			document.getElementById("tipo").selectedIndex = params.tipo;
+		}
+
+		function update_type(tipo) {
+			
+			let params = new Proxy(new URLSearchParams(window.location.search), {
+			  get: (searchParams, prop) => searchParams.get(prop),
+			});
+				
+			window.location.href = '?lat=' + params.lat + '&lon=' + params.lon + '&tipo=' + tipo;
+		}
+
+	</script>
+    <div id="options">
+		<select id="tipo" onchange="update_type(this.selectedIndex)">
+			<option value="0">Aedes</option>
+			<option value="1">Culex</option>
+			<option value="2">Otros mosquitos</option>
+		</select>
+	</div>
+    <div id="map"></div>
+    <script src="./bundle.js"></script>
+  </body>
+</html>
