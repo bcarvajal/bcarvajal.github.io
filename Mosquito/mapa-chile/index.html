@@ -110,17 +110,15 @@
     <div class="modal-content">
       <div class="modal-header">
 <div>
-		Desde: <input type="date" value="2024-01-01" id="start_date" />
-		Hasta: <input type="date" value="2024-12-31" id="limit_date" />
+		Desde: <input type="date" value="2024-01-01" id="start_date" onchange="filter_by_date()" />
+		Hasta: <input type="date" value="2024-12-31" id="limit_date" onchange="filter_by_date()" />
 		&nbsp;
-		<select id="tipo">
+		<select id="tipo" onchange="filter_by_date()">
 			<option value="0">Aedes</option>
 			<option value="1">Culex</option>
 			<option value="2">Otros</option>
 		</select>
 		<input type="hidden" value="" id="comuna" />
-		&nbsp;
-		<button onclick="filter_by_date()">Filtrar</button>
 </div>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
