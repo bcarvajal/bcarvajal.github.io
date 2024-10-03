@@ -1,0 +1,63 @@
+<html>
+<head>
+
+<style>
+
+html, body {
+
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+}
+
+body {
+
+	text-align: center;	
+}
+
+iframe {
+
+	border: none;
+	width: 80%;
+	height: 500px;
+	
+}
+
+h1, button {
+
+	margin-top: 25px;
+}
+
+</style>
+<script>
+
+function guardar_ubicacion() {
+
+	let lat = 0;
+	let lon = 0;
+
+	fetch("https://mosquitoapp.ddns.net/maomao/trampa-ubicacion/" + lat + "/" + lon).then(x => x.json()).then(y => {
+
+		if ( y.success ) {
+		
+			window.alert(y.location);
+		}
+	});
+}
+
+</script>
+</head>
+<body>
+
+<h1>Seleccione la ubicación de la trampa:</h1>
+
+<br />
+
+<iframe src="https://bcarvajal.github.io/Mosquito/mapa-selector/index.html?lat=-32.960718601849315&lon=-71.53654914312185&selected=true"></iframe>
+
+<br />
+
+<button onclick="guardar_ubicacion()">Continuar</button>
+
+</body>
+</html>
