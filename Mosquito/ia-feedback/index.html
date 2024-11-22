@@ -73,7 +73,7 @@ window.onload = function () {
 
 	fetch(url).then(res => res.json()).then(data => {
 	
-		document.getElementById("detected").innerHTML = data.detected ? 'SI' : 'NO';
+		document.getElementById("detected").innerHTML = data.detected;
 		document.getElementById("score").innerHTML = data.score.toFixed(2);
 		
 		document.getElementById("feedback").innerHTML = data.feedback;
