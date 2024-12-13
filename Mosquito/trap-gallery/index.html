@@ -1,0 +1,41 @@
+<html>
+<head>
+<style>
+html,body {
+
+	margin: 0px;
+	padding: 0px;
+}
+img {
+
+	width: 100%;
+	height: auto;
+	display: block;
+}
+</style>
+</head>
+<body>
+<script>
+
+const URL = "https://mosquitoapp.ddns.net/trap/";
+
+fetch(URL + 'phone-gallery').then(x => x.json()).then(data => {
+
+	let image;
+
+	for (let i in data.records) {
+		
+		for (let j in data.records[i].files) {
+		
+			console.log(data.records[i].files[j]);
+		
+			image = new Image();
+			image.src = URL + 'phone-picture/' + data.records[i].id + '/' + data.records[i].entry + '/' + data.records[i].files[j];
+			document.body.appendChild( image );
+		}
+	}
+});
+
+</script>
+</body>
+</html>
