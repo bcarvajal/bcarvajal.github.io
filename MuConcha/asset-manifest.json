@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.eb675037.css",
-    "main.js": "./static/js/main.000d79cc.js",
+    "main.js": "./static/js/main.175f99ac.js",
     "static/js/522.c034f029.chunk.js": "./static/js/522.c034f029.chunk.js",
     "static/media/bg2.png": "./static/media/bg2.0ca7ac186e828e081a27.png",
     "static/media/bg4.jpg": "./static/media/bg4.97ce9d50748b8cbd9542.jpg",
@@ -9,11 +9,13 @@
     "static/media/mg.jpg": "./static/media/mg.40a251e4e64ef72576a1.jpg",
     "static/media/compass.png": "./static/media/compass.90527f60f74dc2f74da2.png",
     "static/media/idk.jpg": "./static/media/idk.73df4e56160a33fd6989.jpg",
-    "static/media/pelagato.jpg": "./static/media/pelagato.151afac57fa88e941df9.jpg",
+    "static/media/golem.jpeg": "./static/media/golem.d0b3ff3262f1de8aa9ba.jpeg",
+    "static/media/assasin.jpeg": "./static/media/assasin.433161fe028d1ad04991.jpeg",
     "static/media/release.jpg": "./static/media/release.f486a37704f303835846.jpg",
     "static/media/beta.jpg": "./static/media/beta.0e1e68fdeb4f6354b1b9.jpg",
     "static/media/wewe.jpg": "./static/media/wewe.dd91ee2b5e187348de4f.jpg",
     "static/media/start.jpeg": "./static/media/start.46b6c9d788c13cd0c554.jpeg",
+    "static/media/event.jpg": "./static/media/event.78fa3008bd8c6439d284.jpg",
     "static/media/slick.svg": "./static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "./static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "./static/media/slick.c94f7671dcc99dce43e2.ttf",
@@ -22,6 +24,6 @@
   },
   "entrypoints": [
     "static/css/main.eb675037.css",
-    "static/js/main.000d79cc.js"
+    "static/js/main.175f99ac.js"
   ]
 }
