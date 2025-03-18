@@ -1,14 +1,15 @@
 {
   "files": {
     "main.css": "./static/css/main.0c6b1098.css",
-    "main.js": "./static/js/main.6279d5c4.js",
-    "static/js/522.c034f029.chunk.js": "./static/js/522.c034f029.chunk.js",
+    "main.js": "./static/js/main.1e550e33.js",
+    "static/js/522.83723e2e.chunk.js": "./static/js/522.83723e2e.chunk.js",
     "static/media/bg2.png": "./static/media/bg2.0ca7ac186e828e081a27.png",
     "static/media/bg4.jpg": "./static/media/bg4.97ce9d50748b8cbd9542.jpg",
     "static/media/bg3.jpg": "./static/media/bg3.9ef5876d7f5783840bca.jpg",
     "static/media/mg.jpg": "./static/media/mg.40a251e4e64ef72576a1.jpg",
     "static/media/compass.png": "./static/media/compass.90527f60f74dc2f74da2.png",
     "static/media/idk.jpg": "./static/media/idk.73df4e56160a33fd6989.jpg",
+    "static/media/deep.jpeg": "./static/media/deep.a83e7dc374e8c418b97b.jpeg",
     "static/media/golem.jpeg": "./static/media/golem.d0b3ff3262f1de8aa9ba.jpeg",
     "static/media/assasin.jpeg": "./static/media/assasin.433161fe028d1ad04991.jpeg",
     "static/media/release.jpg": "./static/media/release.f486a37704f303835846.jpg",
@@ -24,6 +25,6 @@
   },
   "entrypoints": [
     "static/css/main.0c6b1098.css",
-    "static/js/main.6279d5c4.js"
+    "static/js/main.1e550e33.js"
   ]
 }
