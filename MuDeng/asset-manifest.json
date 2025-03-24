@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.1118694f.css",
-    "main.js": "./static/js/main.b4d7d736.js",
+    "main.js": "./static/js/main.1e2127ed.js",
     "static/js/522.29c04eab.chunk.js": "./static/js/522.29c04eab.chunk.js",
     "static/media/Lorencia.jpg": "./static/media/Lorencia.94b77dcd83dc2a0a22b4.jpg",
     "static/media/Noria.jpg": "./static/media/Noria.baad48654cc3e96c44d9.jpg",
@@ -25,11 +25,11 @@
     "static/media/LostTower7.jpg": "./static/media/LostTower7.18c6bd68c1e765ba96fa.jpg",
     "static/media/5.jpg": "./static/media/5.a6975c1740028108d3d3.jpg",
     "static/media/2.jpg": "./static/media/2.9665d35faa6f2a7c13d1.jpg",
-    "static/media/Kalima.jpg": "./static/media/Kalima.6b8e7cbeb4a25298a071.jpg",
     "static/media/4.jpg": "./static/media/4.fc66e26236c0297f4ae2.jpg",
     "static/media/LostTower3.jpg": "./static/media/LostTower3.ca9248ebf5aa65f005df.jpg",
     "static/media/3.jpg": "./static/media/3.9451df230896aabe4b1c.jpg",
-    "static/media/Icarus2.jpg": "./static/media/Icarus2.21a513580d6f9624fac8.jpg",
+    "static/media/Kalima.jpg": "./static/media/Kalima.d8043ccad9115ab01d20.jpg",
+    "static/media/Icarus2.jpg": "./static/media/Icarus2.e8981b260bd10b4e8c0e.jpg",
     "static/media/slick.svg": "./static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "./static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "./static/media/slick.c94f7671dcc99dce43e2.ttf",
@@ -38,6 +38,6 @@
   },
   "entrypoints": [
     "static/css/main.1118694f.css",
-    "static/js/main.b4d7d736.js"
+    "static/js/main.1e2127ed.js"
   ]
 }
