@@ -1,28 +1,29 @@
 {
   "files": {
     "main.css": "./static/css/main.1118694f.css",
-    "main.js": "./static/js/main.1e2127ed.js",
+    "main.js": "./static/js/main.80c49ead.js",
     "static/js/522.29c04eab.chunk.js": "./static/js/522.29c04eab.chunk.js",
     "static/media/Lorencia.jpg": "./static/media/Lorencia.94b77dcd83dc2a0a22b4.jpg",
     "static/media/Noria.jpg": "./static/media/Noria.baad48654cc3e96c44d9.jpg",
     "static/media/Atlans.jpg": "./static/media/Atlans.87a4eec4020e1a39e47d.jpg",
     "static/media/Devias.jpg": "./static/media/Devias.b7642ed404b8f5b09f0f.jpg",
     "static/media/Tarkan.jpg": "./static/media/Tarkan.22f985afaa554b797319.jpg",
-    "static/media/mg.jpg": "./static/media/mg.8e15c941b10f03e07698.jpg",
+    "static/media/mg.jpg": "./static/media/mg.a61f50f5480f11933f26.jpg",
     "static/media/compass.png": "./static/media/compass.90527f60f74dc2f74da2.png",
     "static/media/aya.jpg": "./static/media/aya.0e91baeb8b5e4160bc76.jpg",
-    "static/media/update.jpeg": "./static/media/update.975b716a6649edf75c5c.jpeg",
     "static/media/ghost.jpeg": "./static/media/ghost.e5ace2874c46a95826aa.jpeg",
     "static/media/1.jpg": "./static/media/1.dade8454b0bfd38f002e.jpg",
-    "static/media/golem.jpeg": "./static/media/golem.ced49e8237d5a2d78bb0.jpeg",
+    "static/media/golem.jpeg": "./static/media/golem.b4249bf02658aabf1dc4.jpeg",
     "static/media/deep.jpeg": "./static/media/deep.a83e7dc374e8c418b97b.jpeg",
     "static/media/Icarus1.jpg": "./static/media/Icarus1.bff3399e67d6f286fbd7.jpg",
-    "static/media/idk.jpg": "./static/media/idk.8dbed473a0372679bcc8.jpg",
     "static/media/cc.jpeg": "./static/media/cc.028514e727558b9692d5.jpeg",
     "static/media/bc.jpeg": "./static/media/bc.b9629eb12c697fb31e52.jpeg",
+    "static/media/idk.jpg": "./static/media/idk.f8327f448e0e8da1cb37.jpg",
     "static/media/LostTower1.jpg": "./static/media/LostTower1.c04553face4626246f31.jpg",
+    "static/media/golem.jpg": "./static/media/golem.e0ba9d0d7e76f9143c74.jpg",
     "static/media/ds.jpeg": "./static/media/ds.49032e9151f16f781bbb.jpeg",
     "static/media/LostTower7.jpg": "./static/media/LostTower7.18c6bd68c1e765ba96fa.jpg",
+    "static/media/update.jpg": "./static/media/update.057c2de558fc2525e180.jpg",
     "static/media/5.jpg": "./static/media/5.a6975c1740028108d3d3.jpg",
     "static/media/2.jpg": "./static/media/2.9665d35faa6f2a7c13d1.jpg",
     "static/media/4.jpg": "./static/media/4.fc66e26236c0297f4ae2.jpg",
@@ -38,6 +39,6 @@
   },
   "entrypoints": [
     "static/css/main.1118694f.css",
-    "static/js/main.1e2127ed.js"
+    "static/js/main.80c49ead.js"
   ]
 }
