@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.1118694f.css",
-    "main.js": "./static/js/main.80c49ead.js",
+    "main.js": "./static/js/main.a33b81fa.js",
     "static/js/522.29c04eab.chunk.js": "./static/js/522.29c04eab.chunk.js",
     "static/media/Lorencia.jpg": "./static/media/Lorencia.94b77dcd83dc2a0a22b4.jpg",
     "static/media/Noria.jpg": "./static/media/Noria.baad48654cc3e96c44d9.jpg",
@@ -39,6 +39,6 @@
   },
   "entrypoints": [
     "static/css/main.1118694f.css",
-    "static/js/main.80c49ead.js"
+    "static/js/main.a33b81fa.js"
   ]
 }
